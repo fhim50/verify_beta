@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 import dj_simple_sms
+import verify_blog
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -24,6 +25,8 @@ urlpatterns = patterns('',
         'document_root' : settings.STATIC_ROOT,
     }),
     
-    url(r'^sms/',include(dj_simple_sms.urls))
+    url(r'^sms/',include(dj_simple_sms.urls)),
+	url(r'^blog',include('verify_blog.urls')),
+	#url(r'^dashboard',include(dashboard.urls)),
     
 )

@@ -127,6 +127,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     #'south',
     'dj_simple_sms',
+    'verify_blog',
+    #'dashboard',
     
 
     # Uncomment the next line to enable the admin:
